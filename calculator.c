@@ -26,6 +26,12 @@ int cube (int i){
 	return (i*i*i);
 }
 
+float inverse (float i){
+	if (i==0)
+		return 0;
+	else
+		return 1/i;
+}
 
 int main() {
     int a, b;
@@ -80,8 +86,8 @@ int main() {
                 break;
             case 'i':
                 printf("Enter an integer: ");
-                scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                scanf("%f", &a);
+                printf("The inverse of %f is %f\n",a,inverse(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
